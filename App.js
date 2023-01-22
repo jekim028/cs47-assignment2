@@ -7,6 +7,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Footer } from "./app/components";
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
+
+/* Keep the splash screen visible while we fetch resources */
 SplashScreen.preventAutoHideAsync();
 
 /* This is the home screen used for the navigation system, we'll
@@ -49,7 +51,7 @@ export default function App() {
     }
   }, [fontsLoaded]);
 
-  if (!fontsLoaded) return <AppLoading />;
+  if (!fontsLoaded) return null;
   /* ^Don't mind/edit the code above, it's there to load the font for you! */
   StatusBar.setBarStyle(Themes.light.statusBar);
   /* ^Don't mind/edit this one either unless you decide to do the dark theme one, in that case, you will have to change it accordingly*/
