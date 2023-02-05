@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.2",
     "@react-navigation/native": "^6.1.1",
-    "expo": "~47.0.12",
+    "expo": "^47.0.13",
     "expo-app-loading": "~2.1.1",
     "expo-font": "^11.0.1",
     "expo-status-bar": "~1.4.2",
